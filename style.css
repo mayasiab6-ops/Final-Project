@@ -1,0 +1,198 @@
+body {
+    background-color: gray;
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover {
+    color: #372AD8;
+}
+
+.custom-login {
+    background-color: #4738BE;
+    color: white;
+}
+
+.custom-login:hover {
+    background-color: #372AD8;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.carousel-item img {
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    font-size: 25px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+div > div h2 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 150px;
+}
+
+.caption-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.btn-purple:hover {
+    background-color: #5a32a3;
+    color: #fff;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.travel-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.travel-card:hover {
+    transform: translateY(-5px);
+}
+
+.travel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.travel-carousel img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.travel-body {
+    background: #fff;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+.masked {
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+.place {
+    display: flex;
+    align-items: center;
+}
+
+.place-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map-pin {
+    width: 16px;
+    height: 16px;
+}
+
+.travel-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+.rating-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1px 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rounded-star {
+    width: 16px;
+    height: 16px;
+    fill: #f1c40f;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.footer {
+    background-color: #110434;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;   
+}
+
+.navyra-logo {
+    width: 40px;
+    height: 30px;
+}
+
+.footer-title,
+.navyra-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.footer-link {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-link {
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons .social-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid gray;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: gray;
+    font-weight: 500;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    flex-shrink: 0;
+}

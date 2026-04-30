@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+    .feature {
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .feature:hover {
+        transform: translateY(-5px);
+ 
+    }
+
+    .feature-icon svg {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .btn-purple {
+        background-color: #372AD8;
+        color: #fff;
+        margin-top: 25px;
+        padding: 12px 25px;
+        font-size: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .section-title {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    /* ------------------------------------------------------------------------------------- */
+
+    .btn-purple1 {
+        background-color: #372AD8;
+        color: #fff;
+        margin-top: 20px;
+        height: 76px;
+        width: 250px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .btn-purple1:hover {
+        background-color: #5a32a3;
+        color: #fff;
+    }
+
+    .banner {
+        background-color: rgba(55, 42, 216, 0.85); 
+        color: #fff;
+        text-align: center;
+        padding: 100px 20px;;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+    .banner .btn-custom {
+        background-color: #fff;
+        color: #372AD8;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .banner .btn-custom:hover {
+        background-color: #5a32a3;
+        color: white;
+        transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 480px) {
+        .banner h1 {
+            font-size: 1.5rem;
+        }
+
+        .banner p {
+         font-size: 1rem;
+        }
+
+        .travel-desc {
+            font-size: 0.9rem;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .carousel-caption h2 {
+            font-size: 1.5rem;
+        }
+
+        .carousel-caption p {
+            font-size: 1rem;
+        }
+
+        .contact-item {
+        font-size: 0.9rem;
+        }
+
+        .contact-icon {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+        }
+    }
+
+</style>
+
+<body>
+
+    <div class="container" style="background-color: #F5EEEE;">
+        <nav class="navbar navbar-expand-md border-bottom py-3" style="background-color: white;">
+        
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#" style="color: #4738BE; font-size: 30px;">
+                <img src="./airplane-in-flight-light.png" alt="airplane-in-flight" height="45" class="ms-5 me-2"> Navyra
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav mb-2 mb-md-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link me-3" style="color:#372AD8; font-weight: 600;">Home</a></li>
+                    <li class="nav-item"><a href="destinations.html" class="nav-link me-3" style="font-weight: 600">Destinations</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link me-3" style="font-weight: 600">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link me-4" style="font-weight: 600">Contact</a></li>
+                </ul>
+                <a href="login.html" class="btn custom-login me-4">Log In</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <div class="container" style="background-color: #F5EEEE;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img carousel/pexels-therato-1933318.jpg" class="d-block w-100" alt="Aurora Borealis">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img carousel/pexels-souvenirpixels-417074.jpg" class="d-block w-100" alt="Lake">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img carousel/pexels-asadphoto-1268854.jpg" class="d-block w-100" alt="Lake">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img carousel/pexels-pixabay-38238.jpg" class="d-block w-100" alt="Beach Resort">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img carousel/pexels-sulav-loktam-2815242-4433916.jpg" class="d-block w-100" alt="Lake">
+                </div>
+                <div class="carousel-caption">
+                    <div class="caption-box">
+                    <h2>Explore the World with Us</h2>
+                        <p>Discover breathtaking destinations and unforgettable memories</p>
+                    </div>
+                    <a href="destinations.html" class="btn btn-purple" style="font-size: 17px;">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+
+    <div class="container py-5 px-3 px-md-5" style="background-color: #F5EEEE;">
+        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+
+            <div class="col d-flex">
+                <div class="feature text-center flex-fill">
+                    <div class="feature-icon mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#372ad8" viewBox="0 0 256 256">
+                            <path
+                                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="fs-4 text-body-emphasis">Easy Booking</h3>
+                    <p>Search and book your dream vacation with just a few clicks.</p>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="feature text-center flex-fill">
+                    <div class="feature-icon mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#372ad8" viewBox="0 0 256 256">
+                            <path
+                                d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="fs-4 text-body-emphasis">Secure Payments</h3>
+                    <p>Your transactions are protected.</p>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="feature text-center flex-fill">
+                    <div class="feature-icon mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#372ad8" viewBox="0 0 256 256">
+                            <path
+                                d="M216,96A88,88,0,1,0,72,163.83V240a8,8,0,0,0,11.58,7.16L128,225l44.43,22.21A8.07,8.07,0,0,0,176,248a8,8,0,0,0,8-8V163.83A87.85,87.85,0,0,0,216,96ZM56,96a72,72,0,1,1,72,72A72.08,72.08,0,0,1,56,96ZM168,227.06l-36.43-18.21a8,8,0,0,0-7.16,0L88,227.06V174.37a87.89,87.89,0,0,0,80,0ZM128,152A56,56,0,1,0,72,96,56.06,56.06,0,0,0,128,152Zm0-96A40,40,0,1,1,88,96,40,40,0,0,1,128,56Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="fs-4 text-body-emphasis">Best Prices</h3>
+                    <p>Find the best deals on flights, hotels, and tours.</p>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="feature text-center flex-fill">
+                    <div class="feature-icon mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#372ad8" viewBox="0 0 256 256">
+                            <path
+                                d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="fs-4 text-body-emphasis">Worldwide Destinations</h3>
+                    <p>Explore over 1000+ destinations across the globe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <div class="container py-5 px-3 px-md-5" style="background-color: #F5EEEE;">
+        <h2 class="text-center mb-3 section-title">Top Travel Picks</h2>
+        <p class="text-center mb-5" style="font-size: 25px;">Top destinations picked to give you lasting memories.</p>
+
+        <div class="row g-5">
+
+            <div class="col-md-4">
+                <div class="travel-card">
+                    <div id="baliCarousel" class="carousel slide travel-carousel" data-bs-ride="carousel" data-bs-interval="2500">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="./Bali img/pexels-daniel-maldonado-1864828-7512632.jpg" alt="Bali image 1"></div>
+                            <div class="carousel-item"><img src="./Bali img/pexels-yusudasa-script-3805313-36031844.jpg" alt="Bali image 2"></div>
+                            <div class="carousel-item"><img src="./Bali img/pexels-tomfisk-36299199.jpg" alt="Bali image 3"></div>
+                            <div class="carousel-item"><img src="./Bali img/pexels-maxravier-2253821.jpg" alt="Bali image 4"></div>
+                        </div>
+                    </div>
+               
+                    <div class="rating-badge">
+                        <svg class="rounded-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                            d="M12 2.5c.4 0 .8.2 1 .6l2.3 4.7c.2.4.6.7 1 .8l5.2.8c.9.1 1.3 1.2.6 1.8l-3.8 3.7c-.3.3-.5.8-.4 1.2l.9 5.2c.2.9-.8 1.6-1.6 1.2l-4.7-2.5c-.4-.2-.9-.2-1.3 0l-4.7 2.5c-.8.4-1.8-.3-1.6-1.2l.9-5.2c.1-.4-.1-.9-.4-1.2l-3.8-3.7c-.7-.6-.3-1.7.6-1.8l5.2-.8c.4-.1.8-.4 1-.8l2.3-4.7c.2-.4.6-.6 1-.6z" />
+                        </svg> 4.9
+                    </div>
+                    <div class="travel-body">
+                        <h5 class="place-row">
+                            <span>Bali Paradise</span>
+                            <span class="masked" style="color: #08f;">***** PHP</span>
+                        </h5>
+                        <div class="place">
+                            <img src="./map-pin.png" alt="Map pin" class="map-pin">
+                            <span>Bali, Indonesia</span>
+                        </div>
+                        <p class="travel-desc">Enjoy clean beaches, lively culture, and stunning sunsets in this tropical getaway.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="travel-card">
+                    <div id="swissCarousel" class="carousel slide travel-carousel" data-bs-ride="carousel" data-bs-interval="2500">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="./Swiss Alps img/pexels-dave-frisch-731685-1575938.jpg" alt="Swiss Alps image 1"></div>
+                            <div class="carousel-item"><img src="./Swiss Alps img/pexels-rfera-2089799.jpg" alt="Swiss Alps image 2"></div>
+                            <div class="carousel-item"><img src="./Swiss Alps img/pexels-omid-visuals-2565301-4159997.jpg" alt="Swiss Alps image 3"></div>
+                            <div class="carousel-item"><img src="./Swiss Alps img/pexels-myersmc16-5210307.jpg" alt="Swiss Alps image 4"></div>
+                        </div>
+                    </div>
+              
+                    <div class="rating-badge">
+                        <svg class="rounded-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.5c.4 0 .8.2 1 .6l2.3 4.7c.2.4.6.7 1 .8l5.2.8c.9.1 1.3 1.2.6 1.8l-3.8 3.7c-.3.3-.5.8-.4 1.2l.9 5.2c.2.9-.8 1.6-1.6 1.2l-4.7-2.5c-.4-.2-.9-.2-1.3 0l-4.7 2.5c-.8.4-1.8-.3-1.6-1.2l.9-5.2c.1-.4-.1-.9-.4-1.2l-3.8-3.7c-.7-.6-.3-1.7.6-1.8l5.2-.8c.4-.1.8-.4 1-.8l2.3-4.7c.2-.4.6-.6 1-.6z" />
+                        </svg> 4.8
+                    </div>
+
+                    <div class="travel-body">
+                        <h5 class="place-row">
+                            <span>Swiss Alps Adventure</span>
+                            <span class="masked" style="color: #08f;">***** PHP</span>
+                        </h5>
+                        <div class="place">
+                            <img src="./map-pin.png" alt="Map pin" class="map-pin">
+                            <span>Zermatt, Switzerland</span>
+                        </div>
+                        <p class="travel-desc">Discover grand mountains, untouched valleys, and delightful villages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="travel-card">
+                    <div id="parisCarousel" class="carousel slide travel-carousel" data-bs-ride="carousel" data-bs-interval="2500">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="./Paris img/pexels-ricardo-antoniassi-58095-5196756.jpg" alt="Paris image 1"></div>
+                            <div class="carousel-item"><img src="./Paris img/pexels-zakh-36388312.jpg" alt="Paris image 2"></div>
+                            <div class="carousel-item"><img src="./Paris img/pexels-silvia-trigo-545701-2675266.jpg" alt="Paris image 3"></div>
+                            <div class="carousel-item"><img src="./Paris img/pexels-jasper-de-vreede-688949-4059099.jpg" alt="Paris image 4"></div>
+                        </div>
+                    </div>
+              
+                    <div class="rating-badge">
+                        <svg class="rounded-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.5c.4 0 .8.2 1 .6l2.3 4.7c.2.4.6.7 1 .8l5.2.8c.9.1 1.3 1.2.6 1.8l-3.8 3.7c-.3.3-.5.8-.4 1.2l.9 5.2c.2.9-.8 1.6-1.6 1.2l-4.7-2.5c-.4-.2-.9-.2-1.3 0l-4.7 2.5c-.8.4-1.8-.3-1.6-1.2l.9-5.2c.1-.4-.1-.9-.4-1.2l-3.8-3.7c-.7-.6-.3-1.7.6-1.8l5.2-.8c.4-.1.8-.4 1-.8l2.3-4.7c.2-.4.6-.6 1-.6z" />
+                        </svg> 4.9
+                    </div>
+                    <div class="travel-body">
+                        <h5 class="place-row">
+                            <span>Paris Romance</span>
+                            <span class="masked" style="color: #08f;">***** PHP</span>
+                        </h5>
+                        <div class="place">
+                            <img src="./map-pin.png" alt="Map pin" class="map-pin">
+                            <span>Paris, France</span>
+                        </div>
+                        <p class="travel-desc">Explore famous landmarks, top museums, and delicious French food.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="destinations.html" class="btn btn-purple1 btn-lg">View All Destinations</a>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <div class="container" style="background-color: #F5EEEE;">
+        <section class="banner">
+            <div class="container">
+                <h1 style="font-size: 50px;">Ready to Start Your Adventure?</h1>
+                <p>Join thousands of happy travelers who have explored the world with us</p>
+                <a href="contact.html" class="btn-custom">Get in Touch</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <div class="container" style="background-color: #F5EEEE;">
+        <footer class="footer bg-dark-purple text-light pt-5 pb-3 px-4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 mb-4">
+                        <div class="logo-wrapper mb-2">
+                            <svg class="navyra-logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M224,216a8,8,0,0,1-8,8H72a8,8,0,1,1,0-16H216A8,8,0,0,1,224,216Zm24-80v24a8,8,0,0,1-8,8H61.07a39.75,39.75,0,0,1-38.31-28.51L8.69,92.6A16,16,0,0,1,24,72h8a8,8,0,0,1,5.65,2.34L59.32,96H81.81l-9-26.94A16,16,0,0,1,88,48h8a8,8,0,0,1,5.66,2.34L147.32,96H208A40,40,0,0,1,248,136Zm-16,0a24,24,0,0,0-24-24H144a8,8,0,0,1-5.65-2.34L92.69,64H88l12.49,37.47A8,8,0,0,1,92.91,112H56a8,8,0,0,1-5.66-2.34L28.69,88H24l14.07,46.9a23.85,23.85,0,0,0,23,17.1H232Z">
+                                </path>
+                            </svg> 
+                            <span class="navyra-text">Navyra</span>
+                        </div>
+                        <p>Travel to breathtaking places worldwide. Your story starts here.</p>
+                        <div class="social-icons mt-3">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                </path>
+                            </svg>
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z">
+                                </path>
+                            </svg>
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="destinations.html" class="footer-link">Destinations</a></li>
+                            <li><a href="about.html" class="footer-link">About Us</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <h5 class="footer-title">Popular Destinations</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="destinations.html" class="footer-link">Bali, Indonesia</a></li>
+                            <li><a href="destinations.html" class="footer-link">Swiss Alps</a></li>
+                            <li><a href="destinations.html" class="footer-link">Paris, France</a></li>
+                            <li><a href="destinations.html" class="footer-link">Safari Kenya</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <h5 class="footer-title">Contact Us</h5>
+            
+                        <p class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z">
+                                </path>
+                            </svg>
+                            123 Travel Street, Wander City
+                        </p>
+            
+                        <p class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z">
+                                </path>
+                            </svg>
+                            09123456789
+                        </p>
+            
+                        <p class="contact-item">
+                            <svg class="contact-icon"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z">
+                                </path>
+                            </svg>
+                            infonavyra@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-4">
+                <p>© 2026 Navyra. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

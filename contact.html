@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    .contact-section {
+      background-color: rgba(55, 42, 216, 0.83); 
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ------------------------------------------------------------------------------------- */
+
+    .contact-layout {
+        display: flex;
+        gap: 20px;
+        max-width: 1100px;
+        margin: auto;
+        flex-wrap: wrap;
+        padding-bottom: 35px;
+        padding-top: 40px;
+    }
+
+    .contact-info {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    .contact-info h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .info-box {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;   
+    }
+
+    .icon {
+        width: 42px;
+        height: 42px;
+        background: #A6A0F0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+    .info-text p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .info-text strong {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .help-box {
+        background: #B6B2ED;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        height: 180px;
+    }
+
+    .help-box h4 {
+        margin-bottom: 10px;
+    }
+
+    .help-box p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .help-box button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #372AD8;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .contact-form {
+        flex: 2;
+        min-width: 300px;
+        height: 550px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        border: 2px solid #372AD8;
+    }
+
+    .contact-form h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .contact-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .input-group {
+        flex: 1;
+        min-width: 140px;
+        margin-bottom: 15px;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: none;
+        height: 170px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background: #372AD8;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .submit-btn svg {
+        vertical-align: middle;
+    }
+
+    /* ------------------------------------------------------------------------------------- */
+
+    @media (max-width: 480px) {
+        .contact-section {
+            padding: 50px 15px;
+        }
+
+        .contact-section h1 {
+            font-size: 2rem;
+        }
+
+        .contact-section p {
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+
+        .contact-layout {
+            flex-direction: column;
+            padding: 20px 20px;
+            gap: 25px;
+        }
+
+        .contact-form {
+            height: auto; 
+            padding: 20px;
+        }
+
+        .contact-form h2 {
+            font-size: 1.5rem;
+        }
+
+        .contact-info h2 {
+            font-size: 1.5rem;
+        }       
+
+        .help-box {
+            height: auto;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .contact-section h1 {
+            font-size: 2.5rem;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+        }
+
+        .contact-layout {
+            flex-direction: column;
+            padding: 30px 30px;
+        }
+
+        .contact-form {
+            padding: 25px;
+        }
+
+        .contact-form h2 {
+            font-size: 1.8rem;
+        }
+
+        .contact-info h2 {
+            font-size: 1.8rem;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="container" style="background-color: white;">
+        <nav class="navbar navbar-expand-md border-bottom py-3" style="background-color: white;">
+
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#" style="color: #4738BE; font-size: 30px;">
+                <img src="./airplane-in-flight-light.png" alt="airplane-in-flight" height="45" class="ms-5 me-2">
+                Navyra
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav mb-2 mb-md-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link me-3" style="font-weight: 600">Home</a></li>
+                    <li class="nav-item"><a href="destinations.html" class="nav-link me-3" style="font-weight: 600">Destinations</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link me-3" style="font-weight: 600">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link me-4" style="color:#372AD8; font-weight: 600">Contact</a>
+                    </li>
+                </ul>
+                <a href="login.html" class="btn custom-login me-4">Log In</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <div class="container" style="background-color: white;">
+        <div class="contact-section">
+            <h1>Get in Touch</h1>
+            <p>Have questions? We'd love to hear from you. Send us a message and respond as soon as possible.</p>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <div class="container" style="background-color: white;">
+        <div class="contact-layout">
+    
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+
+                <div class="info-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#372ad8" viewBox="0 0 256 256">
+                            <path
+                                d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="info-text">
+                        <strong>Phone</strong>
+                        <p>09123456789<br>09123456789</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#372ad8" viewBox="0 0 256 256">
+                            <path
+                                d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="info-text">
+                        <strong>Email</strong>
+                        <p>infonavya@gmail.com<br>supportnavya@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#372ad8" viewBox="0 0 256 256">
+                            <path
+                                d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="info-text">
+                        <strong>Address</strong>
+                        <p>123 Travel Street<br>Wander City</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#372ad8" viewBox="0 0 256 256">
+                            <path
+                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="info-text">
+                        <strong>Business Hours</strong>
+                        <p>Mon - Fri: 9:00 AM - 6:00 PM<br>
+                        Sat - Sun: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="help-box">
+                    <h4>Need Immediate Help?</h4>
+                    <p>Our customer support team is available 24/7 for urgent travel assistance.</p>
+                    <button>Chat with Us</button>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+
+                <div class="contact-row">
+                    <div class="input-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="May Anne">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="may@example.com">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Subject</label>
+                    <select>
+                        <option>Select a subject</option>
+                        <option>Booking Inquiry</option>
+                        <option>Customer Support</option>
+                        <option>Feedback</option>
+                        <option>Partnership</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea placeholder="Tell us how we can help you..."></textarea>
+                </div>
+
+                <button class="submit-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffffff" viewBox="0 0 256 256">
+                        <path
+                            d="M227.32,28.68a16,16,0,0,0-15.66-4.08l-.15,0L19.57,82.84a16,16,0,0,0-2.49,29.8L102,154l41.3,84.87A15.86,15.86,0,0,0,157.74,248q.69,0,1.38-.06a15.88,15.88,0,0,0,14-11.51l58.2-191.94c0-.05,0-.1,0-.15A16,16,0,0,0,227.32,28.68ZM157.83,231.85l-.05.14,0-.07-40.06-82.3,48-48a8,8,0,0,0-11.31-11.31l-48,48L24.08,98.25l-.07,0,.14,0L216,40Z">
+                        </path>
+                    </svg>
+                    Send Message
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <div class="container" style="background-color: white;">
+        <footer class="footer bg-dark-purple text-light pt-5 pb-3 px-4">
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-md-3 mb-4">
+                        <div class="logo-wrapper mb-2">
+                            <svg class="navyra-logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M224,216a8,8,0,0,1-8,8H72a8,8,0,1,1,0-16H216A8,8,0,0,1,224,216Zm24-80v24a8,8,0,0,1-8,8H61.07a39.75,39.75,0,0,1-38.31-28.51L8.69,92.6A16,16,0,0,1,24,72h8a8,8,0,0,1,5.65,2.34L59.32,96H81.81l-9-26.94A16,16,0,0,1,88,48h8a8,8,0,0,1,5.66,2.34L147.32,96H208A40,40,0,0,1,248,136Zm-16,0a24,24,0,0,0-24-24H144a8,8,0,0,1-5.65-2.34L92.69,64H88l12.49,37.47A8,8,0,0,1,92.91,112H56a8,8,0,0,1-5.66-2.34L28.69,88H24l14.07,46.9a23.85,23.85,0,0,0,23,17.1H232Z">
+                                </path>
+                            </svg>
+                            <span class="navyra-text">Navyra</span>
+                        </div>
+                        <p>Travel to breathtaking places worldwide. Your story starts here.</p>
+                        <div class="social-icons mt-3">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                </path>
+                            </svg>
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z">
+                                </path>
+                            </svg>
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3 mb-4">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="destinations.html" class="footer-link">Destinations</a></li>
+                            <li><a href="about.html" class="footer-link">About Us</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-3 mb-4">
+                        <h5 class="footer-title">Popular Destinations</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="destinations.html" class="footer-link">Bali, Indonesia</a></li>
+                            <li><a href="destinations.html" class="footer-link">Swiss Alps</a></li>
+                            <li><a href="destinations.html" class="footer-link">Paris, France</a></li>
+                            <li><a href="destinations.html" class="footer-link">Safari Kenya</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-3 mb-4">
+                        <h5 class="footer-title">Contact Us</h5>
+    
+                        <p class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z">
+                                </path>
+                            </svg>
+                            123 Travel Street, Wander City
+                        </p>
+    
+                        <p class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z">
+                                </path>
+                            </svg>
+                            09123456789
+                        </p>
+    
+                        <p class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z">
+                                </path>
+                            </svg>
+                            infonavyra@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom text-center mt-4">
+                <p>© 2026 Navyra. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
